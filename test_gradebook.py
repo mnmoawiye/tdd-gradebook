@@ -5,3 +5,7 @@ def test_letter_grade_A():
 
 def test_letter_grade_F():
     assert letter_grade(45) == "F"
+
+@pytest.mark.parametrize("score, expected", [(95, "A"), (45, "F")])
+def test_letter_grade(score, expected):
+    assert letter_grade(score) == expected
