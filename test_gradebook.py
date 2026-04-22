@@ -35,3 +35,7 @@ def test_average_empty_list():
 def average_not_a_list():
     with pytest.raises(TypeError):
         average("not a list")
+
+def test_average_bad_item():
+    with pytest.raises(TypeError):
+        aveerage(80, "ninety", 70)
