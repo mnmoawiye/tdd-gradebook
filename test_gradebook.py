@@ -46,6 +46,6 @@ def test_curved_score_basic():
 def test_curve_score_cap():
     assert curved_score(90,10)==100
 
-def test_curved_score_negative_bonus();
+def test_curved_score_negative_bonus():
 with pytest.raises(ValueError):
     curved_score(80-5)
