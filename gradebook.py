@@ -19,7 +19,7 @@ def is_passing(score):
     return score >= 60
 
 def average(scores):
-    if not isinstance(score, list):
+    if not isinstance(scores, list):
         raise TypeError("score must be list")
     if len(scores)== 0:
         raise ValueError("scores list cannot be empty")
