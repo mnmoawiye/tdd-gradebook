@@ -14,7 +14,8 @@ def letter_grade(score):
         return "F"
 
 def is_passing(score):
-    return score >= 60
+    if not isinstance(score, (int, float)):
+        raise TypeError ("Score must be number")
 
 def average(scores):
     pass
