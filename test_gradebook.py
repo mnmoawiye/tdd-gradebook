@@ -38,4 +38,4 @@ def average_not_a_list():
 
 def test_average_bad_item():
     with pytest.raises(TypeError):
-        aveerage(80, "ninety", 70)
+        average(80, "ninety", 70)
