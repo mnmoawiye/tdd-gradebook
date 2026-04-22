@@ -42,3 +42,6 @@ def test_average_bad_item():
 
 def test_curved_score_basic():
     assert curved_score(80,5) == 85
+
+def test_curve_score_cap():
+    assert curved_score(90,10)==100
