@@ -28,4 +28,4 @@ def average(scores):
     return round(sum(scores) / len(scores), 2)
 
 def curved_score(score, bonus):
-    return 85
+    return min(score + bonus, 100)
